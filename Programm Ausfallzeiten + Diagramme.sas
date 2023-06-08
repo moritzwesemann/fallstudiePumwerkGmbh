@@ -68,8 +68,8 @@ RUN;
 PROC SGPLOT DATA=work.Werkzeug_agg;
     VBAR Werkzeugtyp / RESPONSE=Anzahl_Ausfalle GROUP= Gesamt_Ausfallzeit;
     XAXIS DISPLAY=(nolabel);
-    YAXIS LABEL='Anzahl der Ausfälle / Gesamtausfallzeit (h)';
-    KEYLEGEND / LOCATION=outside POSITION=bottom TITLE='Werkzeugtyp (Werte in h)';
-    TITLE 'Anzahl der Ausfälle und Gesamtausfallzeit pro Werkzeugtyp (für Werkzeugtypen mit mehr als einem Ausfall)';
+    YAXIS LABEL='Anzahl der Ausfälle';
+    KEYLEGEND / LOCATION=outside POSITION=bottom TITLE='Werkzeugtyp (Gesamtausfallzeit in h)';
+    TITLE 'Anzahl der Ausfälle und Gesamtausfallzeit pro Werkzeugtyp (bei Werkzeugtypen mit mehreren Ausfällen)';
 RUN;
 
